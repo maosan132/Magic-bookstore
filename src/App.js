@@ -1,5 +1,3 @@
-import BooksList from './containers/booksList';
-import BooksForm from './containers/booksForm';
 // import logo from './logo.svg';
 import './App.css';
 
