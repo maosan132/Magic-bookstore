@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+import BooksList from './containers/BooksList';
+import BooksForm from './containers/BooksForm';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="" className="App-logo" alt="logo" />
         <p>
           Edit
           {' '}
@@ -19,9 +21,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React at MIcroverse
+          Learn React
         </a>
       </header>
+      <BooksList />
+      <BooksForm />
     </div>
   );
 }
