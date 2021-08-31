@@ -12,12 +12,14 @@ const categories = [
 
 const BooksForm = () => (
   <form>
+    { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
     <label> Title:</label>
     <input
       type="text"
       name="title"
       value="{title}"
     />
+    { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
     <label>Category:</label>
     <select
       name="category"
