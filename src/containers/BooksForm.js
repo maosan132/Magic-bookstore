@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../actions';
 
@@ -14,6 +14,9 @@ const categories = [
 
 const BooksForm = () => {
   const [book, setBook] = useState({ title: '', category: '' });
+
+  let title = '';
+  let category = '';
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
@@ -31,7 +34,7 @@ const BooksForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({ ...book, id: Math.random().toFixed(2) }));
+    dispatch(addBook({ ...book, id: Math.random().toString(36).substring(7) }));
   };
 
   return (

@@ -29,7 +29,7 @@ const books = [
   },
 ];
 
-const initialState = { books };
+const initialState = books;
 const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
