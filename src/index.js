@@ -6,23 +6,25 @@ import { createStore } from 'redux';
 import App from './App';
 import rootReducer from './reducers';
 
+const randomIdizer = () => Math.random().toString(36).substring(7);
+
 const books = [
   {
     title: 'The Design of EveryDay Things',
     author: 'Don Norman',
-    id: Math.floor(Math.random() * 1000),
+    id: randomIdizer(),
     category: 'Design',
   },
   {
     title: 'The Most Human Human',
     author: 'Brian Christian',
-    id: Math.floor(Math.random() * 1000),
+    id: randomIdizer(),
     category: 'Psychology',
   },
   {
     title: 'Clean Code',
     author: 'Robert C. Martin',
-    id: Math.floor(Math.random() * 1000),
+    id: randomIdizer(),
     category: 'Software Practices',
   },
 ];
