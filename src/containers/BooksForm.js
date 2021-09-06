@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../actions';
+import * as action from '../actions';
 
 const categories = [
   'Action',
@@ -14,6 +14,7 @@ const categories = [
 
 const BooksForm = () => {
   const [book, setBook] = useState({ title: '', category: '' });
+  // const books = useSelector((store) => store.books);
 
   let title = '';
   let category = '';
@@ -21,14 +22,15 @@ const BooksForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    // setBook({ ...book, [name]: value });
+
     if (name === 'title') {
       title = value;
-      setBook((state) => ({ ...state, title }));
+      setBook({ ...book, title });
+      // dispatch(action.addBook())
     }
     if (name === 'category') {
       category = value;
-      setBook((state) => ({ ...state, category }));
+      setBook({ ...book, category });
     }
   };
 
