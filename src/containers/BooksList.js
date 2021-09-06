@@ -3,7 +3,7 @@ import Book from '../components/Book';
 import * as action from '../actions';
 
 const BookList = () => {
-  const books = useSelector((store) => store.books);
+  const books = useSelector((store) => store.bookStoreReducer);
   const dispatch = useDispatch();
 
   const handleRemoveBook = (book) => {

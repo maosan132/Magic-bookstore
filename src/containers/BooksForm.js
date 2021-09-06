@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import * as action from '../actions';
+import { addBook } from '../actions';
 
 const categories = [
   'Action',
@@ -36,7 +36,10 @@ const BooksForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({ ...book, id: Math.random().toString(36).substring(7) }));
+    dispatch(addBook({
+      ...book,
+      id: Math.random().toString(36).substring(7),
+    }));
   };
 
   return (
