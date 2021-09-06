@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# REACT & REDUX BOOK-STORE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> In this project we will use React and Redux to build a very simple Bookstore. It will be deployed at Heroku.
 
-## Available Scripts
+<p align="center">
+    <a href="https://img.shields.io/badge/Microverse-blueviolet" alt="Contributors">
+        <img src="https://img.shields.io/badge/Microverse-blueviolet" /></a>
+    <a href="https://www.javascript.com/" alt="JS">
+        <img src="https://img.shields.io/badge/javaScript-ES6-yellow" /></a>
+    <a href="https://webpack.js.org//" alt="Webpack">
+        <img src="https://img.shields.io/badge/Webpack.js-5.21.2-blue" /></a>
+    <a href="https://eslint.org/" alt="Eslint">
+        <img src="https://img.shields.io/badge/eslint-6.8.0-red" /></a>
+    <a href="https://stylelint.io/" alt="Stylelint">
+        <img src="https://img.shields.io/badge/Stylelint-13.3.x-green" /></a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+    <br />
+    <br />&#10023;
+    <a href="#Prerequisites">Watch the Live Version</a> &#10023;
+    <a href="#Prerequisites">Prerequisites</a> &#10023;
+    <a href="#Getting-Started">Getting Started</a> &#10023;
+    <a href="#Contributing">Contributing</a> &#10023;
+    <a href="#Author">Author</a> &#10023;
+    <a href="#Show-your-support">Show your support</a> &#10023;
+    <a href="#License">License</a> &#10023;
+    <a href="#Acknowledgments">Acknowledgments</a> &#10023;
+    <a href="https://github.com/maosan132/Magic-bookstore/issues">Report Bug</a>&#10023;
 
-### `npm start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<b>Magic Bookstore</b> is a React and Redux simple Bookstore. It will be deployed at Heroku.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Watch the Live Version
 
-### `npm run build`
+[Live Demo](https://mmash-agic-bookstore.herokuapp.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- JavaScript ES6
+- React
+- React-Redux
+- Redux
+- NodeJS
+- Webpack
+- Buildpack
+- Heroku
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+In order to run locally this project type the following commands over the terminal in Linux or Mac or the Windows cmd console:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```s
+$ git clone git@github.com:maosan132/Magic-bookstore.git
+$ cd magic-bookstore
+$ npm i
+$ npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Open `http://localhost:3000` to view running project in the browser.
 
-## Learn More
+> Run the unit tests with
+```s
+$ npm run test
+```
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to check the [issues page](https://github.com/maosan132/Magic-bookstore/issues).
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👤 **Mauricio Santos**
 
-### Analyzing the Bundle Size
+- Github: [@maosan132](https://github.com/maosan132)
+- Twitter: [@maosan132](https://twitter.com/maosan132)
+- Linkedin: [maurisantos](https://www.linkedin.com/in/mauricsantos)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Show your support
 
-### Advanced Configuration
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License
