@@ -47,7 +47,6 @@ const BooksForm = () => {
       <h4> Title:</h4>
       <input
         name="title"
-        value="{title}"
         type="text"
         onChange={(e) => handleChange(e)}
       />
