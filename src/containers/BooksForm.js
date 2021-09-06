@@ -14,7 +14,6 @@ const categories = [
 
 const BooksForm = () => {
   const [book, setBook] = useState({ title: '', category: '' });
-  // const books = useSelector((store) => store.books);
 
   let title = '';
   let category = '';
@@ -26,7 +25,6 @@ const BooksForm = () => {
     if (name === 'title') {
       title = value;
       setBook({ ...book, title });
-      // dispatch(action.addBook())
     }
     if (name === 'category') {
       category = value;
