@@ -1,6 +1,7 @@
-import { categories } from '../containers/BooksForm';
+import { categories, selectBox } from '../containers/BooksForm';
 
-const CategoryFilter = ({ categories }) => 
+const CategoryFilter = ({ categories }) => {
+
 
   return (
     <div className="category-filter">
@@ -23,6 +24,3 @@ const CategoryFilter = ({ categories }) =>
   );
 };
 
-CategoryFilter.propTypes = {
-  CategoryFilter: PropTypes.func.isRequired,
-};
