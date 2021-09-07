@@ -18,8 +18,8 @@ const Book = ({ item, removeBook }) => (
 
 Book.propTypes = {
   item: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  // title: PropTypes.string.isRequired,
+  // category: PropTypes.string.isRequired,
   removeBook: PropTypes.func.isRequired,
 };
 
