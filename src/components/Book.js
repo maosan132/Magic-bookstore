@@ -17,10 +17,20 @@ const Book = ({ item, removeBook }) => (
 );
 
 Book.propTypes = {
-  item: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  item: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }),
   removeBook: PropTypes.func.isRequired,
+};
+
+Book.defaultProps = {
+  item: {
+    id: Math.random().toString(36).substring(7),
+    title: 'not defined',
+    category: 'not defined',
+  },
 };
 
 export default Book;

@@ -23,3 +23,16 @@ table {
   margin: 0 auto;
   border: 1px dashed gray;
 }
+
+h4 {
+  margin-bottom: 0.5em;
+}
+
+.filter-title {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.filter-title::after {
+  content: '\00a0\00a0';
+}

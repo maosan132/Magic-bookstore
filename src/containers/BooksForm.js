@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../actions';
 
 const categories = [
+  'Select a category',
   'Action',
   'Biography',
   'History',
@@ -11,6 +12,12 @@ const categories = [
   'Learning',
   'Sci-Fi',
 ];
+
+const selectBox = categories.map((c) => (
+  <option value={c} key={c}>
+    {c}
+  </option>
+));
 
 const BooksForm = () => {
   const [book, setBook] = useState({ title: '', category: '' });
@@ -46,17 +53,14 @@ const BooksForm = () => {
       <input
         name="title"
         type="text"
-        onChange={(e) => handleChange(e)}
+        onChange={handleChange}
       />
       <h4>Category:</h4>
       <select
         name="category"
-        value="{category}"
-        onChange={(e) => handleChange(e)}
+        onChange={handleChange}
       >
-        {categories.map((category) => (
-          <option key={category}>{category}</option>
-        ))}
+        {selectBox}
       </select>
       <button type="submit">Submit</button>
     </form>
