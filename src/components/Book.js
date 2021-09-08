@@ -2,54 +2,44 @@ import PropTypes from 'prop-types';
 import '../styles/Book.css';
 
 const Book = ({ item, removeBook }) => (
-  <div className="LessonPanel">
-    <span className="category">
-      {item.category}
-    </span>
-    <span className="title">
-      {item.title}
-    </span>
-    <span className="author">
-      {item.author}
-    </span>
-    <span className="Comments">
-      Comments
-    </span>
-    <span>
-      <button
-        type="button"
-        onClick={() => removeBook(item)}
-      >
-        Remove
-      </button>
-    </span>
-    <span className="Edit">
-      Edit
-    </span>
-    <div className="Rectangle-3">
-      <div className="Oval-2" />
+  <div className="Book flex">
+    <div className="book-main">
+      <span className="book-category">{item.category}</span>
+      <h2>{item.title}</h2>
+      <span className="book-author">Author</span>
+      <ul className="books-actions flex">
+        <li>Comments</li>
+        <li>
+          <button
+            type="button"
+            onClick={() => removeBook(item)}
+          >
+            Remove
+          </button>
+        </li>
+        <li>Edit</li>
+      </ul>
     </div>
-    <span className="-Percent-Complete">
-      64%
-    </span>
-    <span className="Completed Text-Style-9">
-      Completed
-    </span>
-
-    <div className="Line-2" />
-
-    <span className="Current-Chapter">
-      Current Chapter
-    </span>
-    <span className="Current-Lesson">
-      Chapter 17
-    </span>
-    <div className="Rectangle-2">
-      <span className="Update-progress">
-        UPDATE PROGRESS
-      </span>
+    <div className="book-progress flex">
+      <div className="book-progress-chart flex">
+        <div className="progress-circle p64">
+          <div className="left-half-clipper">
+            <div className="first50-bar" />
+            <div className="value-bar" />
+          </div>
+        </div>
+        <div>
+          <span className="percentage">64%</span>
+          <span>Completed</span>
+        </div>
+      </div>
+      <div className="vertical-line" />
+      <div className="book-progress-chapter">
+        <span className="title">CURRENT CHAPTER</span>
+        <span className="chapter-num">Chapter 17</span>
+        <button type="button">UPDATE PROGRESS</button>
+      </div>
     </div>
-
   </div>
 );
 
