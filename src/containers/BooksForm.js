@@ -4,7 +4,7 @@ import { addBook } from '../actions';
 import '../styles/BookForm.css';
 
 const categories = [
-  'Select a category',
+  'Category',
   'Action',
   'Biography',
   'History',
@@ -49,31 +49,24 @@ const BooksForm = () => {
   };
 
   return (
-    <>
-      <span className="Title Text-Style-10">
-        ADD NEW BOOK
-      </span>
-      <form onSubmit={handleSubmit}>
-        <h4> Title:</h4>
+    <div className="form-container">
+      <h2 className="title">ADD NEW BOOK</h2>
+      <form className="BooksForm flex" onSubmit={handleSubmit}>
         <input
           name="title"
           type="text"
           onChange={handleChange}
         />
-        <h4>Category:</h4>
         <select
+          className="pointer"
           name="category"
           onChange={handleChange}
         >
           {selectBox}
         </select>
-        <div className="Rectangle-2">
-          <span className="ADD-BOOK">
-            <button type="submit">Submit</button>
-          </span>
-        </div>
+        <button type="submit" className="pointer">ADD BOOK</button>
       </form>
-    </>
+    </div>
   );
 };
 

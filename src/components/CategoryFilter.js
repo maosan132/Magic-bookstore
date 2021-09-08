@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const categories = [
-  'Select a category',
+  'CATEGORY',
   'All',
   'Action',
   'Biography',
