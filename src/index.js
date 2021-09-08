@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './App';
 import rootReducer from './reducers';
+import './styles/index.css';
 
 const randomIdizer = () => Math.random().toString(36).substring(7);
 

@@ -1,15 +1,13 @@
 :root {
   --pale-grey: #f5f6fa;
+  --black-5 : rgba(0, 0, 0, 0.05);
 }
+
 .App {
   width: 100rem;
   height: 89.625rem;
   padding: 9.313rem 3.75rem 7.688rem 6.25rem;
   background-color: var(--pale-grey);
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 table {

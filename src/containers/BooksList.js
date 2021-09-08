@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
 import * as action from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
+import '../styles/BookList.css';
 
 const BookList = () => {
   const books = useSelector((store) => store.bookStoreReducer);
@@ -22,6 +23,9 @@ const BookList = () => {
 
   return (
     <div>
+      <span className="Bookstore-CMS Text-Style-5">
+        Bookstore CMS
+      </span>
       <h1>Books List</h1>
       <CategoryFilter filter={handleCategoryFilter} />
       <table>
