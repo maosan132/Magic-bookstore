@@ -5,6 +5,9 @@
   --black-two: #121212;
   --azure: #0290ff;
   --black-two: #121212;
+  --blue-links: #4386bf;
+  --dodger-blue: #379cf6;
+  --medium-blue: #307bbe;
 }
 
 .App {
@@ -40,4 +43,11 @@ h4 {
   border-radius: 4px;
   box-shadow: 0 0 60px 0 var(--black-5);
   background-color: #fafafa;
+}
+
+.Line {
+  width: 75rem;
+  height: 0.125rem;
+  margin: 2.5rem 0.063rem 1.813rem 0;
+  border: solid 1px #e8e8e8;
 }

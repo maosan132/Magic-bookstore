@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <div className="panel-bg">
         <BooksList />
+        <div className="Line" />
         <BooksForm />
       </div>
     </div>

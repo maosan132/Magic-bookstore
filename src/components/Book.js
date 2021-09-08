@@ -12,6 +12,9 @@ const Book = ({ item, removeBook }) => (
     <span className="author">
       {item.author}
     </span>
+    <span className="Comments">
+      Comments
+    </span>
     <span>
       <button
         type="button"
@@ -20,6 +23,32 @@ const Book = ({ item, removeBook }) => (
         Remove
       </button>
     </span>
+    <span className="Edit">
+      Edit
+    </span>
+    <div className="Rectangle-3">
+      <div className="Oval-2" />
+    </div>
+    <span className="-Percent-Complete">
+      64%
+    </span>
+    <span className="Completed Text-Style-9">
+      Completed
+    </span>
+
+    <div className="Line-2" />
+
+    <span className="Current-Chapter">
+      Current Chapter
+    </span>
+    <span className="Current-Lesson">
+      Chapter 17
+    </span>
+    <div className="Rectangle-2">
+      <span className="Update-progress">
+        UPDATE PROGRESS
+      </span>
+    </div>
 
   </div>
 );

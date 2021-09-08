@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../actions';
+import '../styles/BookForm.css';
 
 const categories = [
   'Select a category',
@@ -48,22 +49,31 @@ const BooksForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h4> Title:</h4>
-      <input
-        name="title"
-        type="text"
-        onChange={handleChange}
-      />
-      <h4>Category:</h4>
-      <select
-        name="category"
-        onChange={handleChange}
-      >
-        {selectBox}
-      </select>
-      <button type="submit">Submit</button>
-    </form>
+    <>
+      <span className="Title Text-Style-10">
+        ADD NEW BOOK
+      </span>
+      <form onSubmit={handleSubmit}>
+        <h4> Title:</h4>
+        <input
+          name="title"
+          type="text"
+          onChange={handleChange}
+        />
+        <h4>Category:</h4>
+        <select
+          name="category"
+          onChange={handleChange}
+        >
+          {selectBox}
+        </select>
+        <div className="Rectangle-2">
+          <span className="ADD-BOOK">
+            <button type="submit">Submit</button>
+          </span>
+        </div>
+      </form>
+    </>
   );
 };
 
