@@ -23,7 +23,6 @@ const BookList = () => {
   return (
     <div>
       <h1>Books List</h1>
-      <h3 className="filter-title">Filter by:</h3>
       <CategoryFilter filter={handleCategoryFilter} />
       <table>
         <thead>
