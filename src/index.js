@@ -8,7 +8,7 @@ import rootReducer from './reducers';
 
 const randomIdizer = () => Math.random().toString(36).substring(7);
 
-const books = [
+const bookStoreReducer = [
   {
     title: 'The Design of EveryDay Things',
     author: 'Don Norman',
@@ -29,7 +29,7 @@ const books = [
   },
 ];
 
-const initialState = { books };
+const initialState = { bookStoreReducer };
 const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
@@ -38,3 +38,5 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root'),
 );
+
+export default initialState;
