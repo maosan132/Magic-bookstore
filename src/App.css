@@ -27,3 +27,12 @@ table {
 h4 {
   margin-bottom: 0.5em;
 }
+
+.filter-title {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.filter-title::after {
+  content: '\00a0\00a0';
+}

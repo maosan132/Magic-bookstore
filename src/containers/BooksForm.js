@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../actions';
 
-export const categories = [
+const categories = [
   'Select a category',
   'Action',
   'Biography',
