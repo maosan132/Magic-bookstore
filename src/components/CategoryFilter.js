@@ -1,26 +1,14 @@
-import { categories, selectBox } from '../containers/BooksForm';
+import PropTypes from 'prop-types';
+import { selectBox } from '../containers/BooksForm';
 
-const CategoryFilter = ({ categories }) => {
+const CategoryFilter = ({ filter }) => (
+  <select onChange={filter}>
+    {selectBox}
+  </select>
+);
 
-
-  return (
-    <div className="category-filter">
-      <h3>Filter by category</h3>
-      <div className="category-filter__list">
-        {categories.map((category) => (
-          <div key={category} className="category-filter__item">
-            <input
-              type="checkbox"
-              id={category}
-              value={category}
-              checked={selected.includes(category)}
-              onChange={handleChange}
-            />
-            <label htmlFor={category}>{category}</label>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+CategoryFilter.propTypes = {
+  filter: PropTypes.func.isRequired,
 };
 
+export default CategoryFilter;

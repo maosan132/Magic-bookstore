@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../actions';
 
 export const categories = [
+  'Select a category',
   'Action',
   'Biography',
   'History',
@@ -52,13 +53,12 @@ const BooksForm = () => {
       <input
         name="title"
         type="text"
-        onChange={(e) => handleChange(e)}
+        onChange={handleChange}
       />
       <h4>Category:</h4>
       <select
         name="category"
-        value="{category}"
-        onChange={(e) => handleChange(e)}
+        onChange={handleChange}
       >
         {selectBox}
       </select>
