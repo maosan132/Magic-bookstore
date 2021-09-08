@@ -1,4 +1,3 @@
-/* eslint-disable react/forbid-prop-types */
 import PropTypes from 'prop-types';
 
 const Book = ({ item, removeBook }) => (
@@ -18,7 +17,7 @@ const Book = ({ item, removeBook }) => (
 );
 
 Book.propTypes = {
-  item: PropTypes.object.isRequired,
+  item: PropTypes.shape({}).isRequired,
   removeBook: PropTypes.func.isRequired,
 };
 
