@@ -10,44 +10,71 @@
   --medium-blue: #307bbe;
 }
 
-.App {
-  width: 100rem;
-  height: 89.625rem;
-  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
-  background-color: var(--pale-grey);
+header {
+  justify-content: space-between;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--lightgrey-color);
+  padding: 20px 100px;
+  margin-bottom: 20px;
 }
 
-table {
-  margin: 0 auto;
-  border: 1px dashed gray;
+.header-leftside > * {
+  margin-right: 60px;
 }
 
-h4 {
-  margin-bottom: 0.5em;
+.header-leftside span,
+.header-leftside select {
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
 }
 
-.filter-title {
-  display: inline-block;
-  margin-top: 0;
+header img {
+  width: 40px;
+  height: 40px;
 }
 
-.filter-title::after {
-  content: '\00a0\00a0';
+.BooksList {
+  padding-bottom: 25px;
+  border-bottom: 2px solid var(--lightgrey-color);
 }
 
-.panel-bg {
-  width: 87.5rem;
-  height: 68.563rem;
-  margin: 0 2.5rem 4.063rem 0;
-  padding: 0 0 49.625rem;
-  border-radius: 4px;
-  box-shadow: 0 0 60px 0 var(--black-5);
-  background-color: #fafafa;
+.form-container {
+  padding: 40px 100px;
 }
 
-.Line {
-  width: 75rem;
-  height: 0.125rem;
-  margin: 2.5rem 0.063rem 1.813rem 0;
-  border: solid 1px #e8e8e8;
+.form-container .title {
+  color: var(--grey-color);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.BooksForm {
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.BooksForm > * {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid var(--lightgrey-color);
+  background-color: var(--white-color);
+  border-radius: 3px;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+input[type="text"] {
+  width: 60%;
+}
+
+.BooksForm select {
+  width: 20%;
+}
+
+.BooksForm button {
+  width: 15%;
+  background-color: var(--azure-color);
+  color: var(--white-color);
 }
