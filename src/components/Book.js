@@ -2,25 +2,33 @@ import PropTypes from 'prop-types';
 import '../styles/Book.css';
 
 const Book = ({ item, removeBook }) => (
-  <tr className="LessonPanel">
-    <td>{item.id}</td>
-    <td>{item.title}</td>
-    <td>{item.category}</td>
-    <td>
+  <div className="LessonPanel">
+    <span className="category">
+      {item.category}
+    </span>
+    <span className="title">
+      {item.title}
+    </span>
+    <span className="author">
+      {item.author}
+    </span>
+    <span>
       <button
         type="button"
         onClick={() => removeBook(item)}
       >
-        Remove book
+        Remove
       </button>
-    </td>
-  </tr>
+    </span>
+
+  </div>
 );
 
 Book.propTypes = {
   item: PropTypes.shape({
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }),
   removeBook: PropTypes.func.isRequired,
@@ -31,6 +39,7 @@ Book.defaultProps = {
     id: Math.random().toString(36).substring(7),
     title: 'not defined',
     category: 'not defined',
+    author: 'not defined',
   },
 };
 

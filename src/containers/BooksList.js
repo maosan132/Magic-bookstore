@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
 import * as action from '../actions';
-import CategoryFilter from '../components/CategoryFilter';
+// import CategoryFilter from '../components/CategoryFilter';
 import '../styles/BookList.css';
 
 const BookList = () => {
@@ -13,9 +13,9 @@ const BookList = () => {
     dispatch(action.removeBook(book));
   };
 
-  const handleCategoryFilter = (e) => {
-    dispatch(action.changeFilter(e.target.value));
-  };
+  // const handleCategoryFilter = (e) => {
+  //   dispatch(action.changeFilter(e.target.value));
+  // };
 
   const selectedCat = (filter !== 'All')
     ? books.filter((i) => i.category === filter)
@@ -35,7 +35,7 @@ const BookList = () => {
       <div className="Oval">
         <div className="Mask" />
       </div>
-      <CategoryFilter filter={handleCategoryFilter} />
+      {/* <CategoryFilter filter={handleCategoryFilter} /> */}
       {
         selectedCat.map((b) => (
           <Book
