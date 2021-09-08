@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import '../styles/Book.css';
 
 const Book = ({ item, removeBook }) => (
-  <tr>
+  <tr className="LessonPanel">
     <td>{item.id}</td>
     <td>{item.title}</td>
     <td>{item.category}</td>

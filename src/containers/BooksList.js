@@ -26,28 +26,25 @@ const BookList = () => {
       <span className="Bookstore-CMS Text-Style-5">
         Bookstore CMS
       </span>
-      <h1>Books List</h1>
+      <span className="BOOKS Text-Style-7">
+        BOOKS
+      </span>
+      <span className="CATEGORIES Text-Style-7">
+        CATEGORIES
+      </span>
+      <div className="Oval">
+        <div className="Mask" />
+      </div>
       <CategoryFilter filter={handleCategoryFilter} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            selectedCat.map((b) => (
-              <Book
-                item={b}
-                removeBook={handleRemoveBook}
-                key={b.id}
-              />
-            ))
-          }
-        </tbody>
-      </table>
+      {
+        selectedCat.map((b) => (
+          <Book
+            item={b}
+            removeBook={handleRemoveBook}
+            key={b.id}
+          />
+        ))
+      }
     </div>
   );
 };
