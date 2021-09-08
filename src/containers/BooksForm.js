@@ -13,7 +13,7 @@ const categories = [
   'Sci-Fi',
 ];
 
-export const selectBox = categories.map((c) => (
+const selectBox = categories.map((c) => (
   <option value={c} key={c}>
     {c}
   </option>

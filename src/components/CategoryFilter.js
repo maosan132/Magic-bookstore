@@ -1,5 +1,22 @@
 import PropTypes from 'prop-types';
-import { selectBox } from '../containers/BooksForm';
+
+const categories = [
+  'Select a category',
+  'All',
+  'Action',
+  'Biography',
+  'History',
+  'Horror',
+  'Kids',
+  'Learning',
+  'Sci-Fi',
+];
+
+const selectBox = categories.map((c) => (
+  <option value={c} key={c}>
+    {c}
+  </option>
+));
 
 const CategoryFilter = ({ filter }) => (
   <select onChange={filter}>
