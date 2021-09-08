@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import PropTypes from 'prop-types';
 
 const Book = ({ item, removeBook }) => (
@@ -17,7 +18,6 @@ const Book = ({ item, removeBook }) => (
 );
 
 Book.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
   item: PropTypes.object.isRequired,
   removeBook: PropTypes.func.isRequired,
 };
