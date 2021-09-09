@@ -9,6 +9,7 @@ const Book = ({ item, removeBook }) => (
       <span className="book-author">Author</span>
       <ul className="books-actions flex">
         <li>Comments</li>
+        <div className="Line-2" />
         <li>
           <button
             type="button"
@@ -17,6 +18,7 @@ const Book = ({ item, removeBook }) => (
             Remove
           </button>
         </li>
+        <div className="Line-2" />
         <li>Edit</li>
       </ul>
     </div>

@@ -22,6 +22,7 @@
 
 .books-actions {
   margin-top: 20px;
+  padding-inline-start: 0;
 }
 
 .books-actions > * {
@@ -35,6 +36,10 @@
   background-color: transparent;
   font-family: inherit;
   font-size: 16px;
+}
+
+.books-actions li {
+  list-style-type: none;
 }
 
 .book-progress-chart {
@@ -76,6 +81,11 @@
   border-radius: 3px;
 }
 
-.books-actions button:hover {
+.books-actions li:hover {
   text-decoration: underline;
+}
+
+.Line-2 {
+  height: 1.5rem;
+  border: solid 1px #e8e8e8;
 }
