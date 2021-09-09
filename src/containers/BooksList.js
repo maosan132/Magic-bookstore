@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
 import * as action from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
-import userIcon from '../user-icon.png';
+import userIcon from '../images/user-icon.png';
 
 const BookList = () => {
   const books = useSelector((store) => store.bookStoreReducer);
@@ -29,7 +29,7 @@ const BookList = () => {
           <span>BOOKS</span>
           <CategoryFilter filter={handleCategoryFilter} />
         </div>
-        <img src={userIcon} alt="user-icon" />
+        <img className="icon" src={userIcon} style={{ height: '20%', width: '20px' }} alt="user-icon" />
       </header>
       <main>
         {

@@ -87,5 +87,20 @@
 
 .Line-2 {
   height: 1.5rem;
-  border: solid 1px #e8e8e8;
+  border: solid 1px var(--lightgrey-color);
+}
+
+.icon {
+  height: 50%;
+  width: auto;
+}
+
+.progress-circle {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: solid 5px var(--lightgrey-color);
+  border-radius: 50%;
+  border-top-color: var(--azure);
+  border-right-color: var(--azure);
+  margin-right: 10px;
 }
