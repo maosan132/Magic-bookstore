@@ -6,7 +6,7 @@ const Book = ({ item, removeBook }) => (
     <div className="book-main">
       <span className="book-category">{item.category}</span>
       <h2>{item.title}</h2>
-      <span className="book-author">Author</span>
+      <span className="book-author">{item.author ? item.author : 'Author'}</span>
       <ul className="books-actions flex">
         <li>Comments</li>
         <div className="Line-2" />
