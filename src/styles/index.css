@@ -1,0 +1,65 @@
+:root {
+  --pale-grey: #f5f6fa;
+  --black-5: rgba(0, 0, 0, 0.05);
+  --azure: #0290ff;
+  --black-two: #121212;
+  --blue-links: #4386bf;
+  --dodger-blue: #379cf6;
+  --medium-blue: #307bbe;
+  --white-color: #fff;
+  --greywhite-color: #fafafa;
+  --lightgrey-color: #e8e8e8;
+  --grey-color: #888;
+  --azure-color: #0290ff;
+  --lightblue-color: #4386bf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  margin: 0;
+  background-color: var(--greywhite-color);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 30px;
+  color: var(--azure-color);
+}
+
+h2 {
+  font-size: 20px;
+}
+
+span {
+  font-size: 15px;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}

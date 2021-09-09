@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../actions';
 
 const categories = [
-  'Select a category',
+  'Category',
   'Action',
   'Biography',
   'History',
@@ -48,22 +48,24 @@ const BooksForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h4> Title:</h4>
-      <input
-        name="title"
-        type="text"
-        onChange={handleChange}
-      />
-      <h4>Category:</h4>
-      <select
-        name="category"
-        onChange={handleChange}
-      >
-        {selectBox}
-      </select>
-      <button type="submit">Submit</button>
-    </form>
+    <div className="form-container">
+      <h2 className="title">ADD NEW BOOK</h2>
+      <form className="BooksForm flex" onSubmit={handleSubmit}>
+        <input
+          name="title"
+          type="text"
+          onChange={handleChange}
+        />
+        <select
+          className="pointer"
+          name="category"
+          onChange={handleChange}
+        >
+          {selectBox}
+        </select>
+        <button type="submit" className="pointer">ADD BOOK</button>
+      </form>
+    </div>
   );
 };
 

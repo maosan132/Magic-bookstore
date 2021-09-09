@@ -39,6 +39,8 @@
 
 [Live Demo](https://mmash-agic-bookstore.herokuapp.com/)
 
+![screenshot](./src/images/screenshot.png)
+
 ### Prerequisites
 
 - JavaScript ES6
