@@ -13,19 +13,19 @@ const bookStoreReducer = [
     title: 'The Design of EveryDay Things',
     author: 'Don Norman',
     id: randomIdizer(),
-    category: 'Design',
+    category: 'History',
   },
   {
     title: 'The Most Human Human',
     author: 'Brian Christian',
     id: randomIdizer(),
-    category: 'Psychology',
+    category: 'Horror',
   },
   {
     title: 'Clean Code',
     author: 'Robert C. Martin',
     id: randomIdizer(),
-    category: 'Software Practices',
+    category: 'Learning',
   },
 ];
 
