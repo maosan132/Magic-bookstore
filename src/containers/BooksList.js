@@ -29,7 +29,13 @@ const BookList = () => {
           <span>BOOKS</span>
           <CategoryFilter filter={handleCategoryFilter} />
         </div>
-        <img className="icon" src={userIcon} style={{ height: '20%', width: '20px' }} alt="user-icon" />
+        <a href="#user" className="user-circle">
+          <img
+            className="icon"
+            src={userIcon}
+            alt="user-icon"
+          />
+        </a>
       </header>
       <main>
         {

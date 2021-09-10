@@ -90,11 +90,6 @@
   border: solid 1px var(--lightgrey-color);
 }
 
-.icon {
-  height: 50%;
-  width: auto;
-}
-
 .progress-circle {
   width: 4.25rem;
   height: 4.25rem;
