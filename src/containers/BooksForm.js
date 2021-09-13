@@ -62,7 +62,7 @@ const BooksForm = () => {
           className="pointer"
           name="category"
           onChange={handleChange}
-          value={category.title}
+          value={book.category}
         >
           {selectBox}
         </select>
