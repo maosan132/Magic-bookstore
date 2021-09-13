@@ -45,6 +45,7 @@ const BooksForm = () => {
       ...book,
       id: Math.random().toString(36).substring(7),
     }));
+    setBook({ title: '', category: '' });
   };
 
   return (
@@ -55,6 +56,7 @@ const BooksForm = () => {
           name="title"
           type="text"
           onChange={handleChange}
+          value={book.title}
         />
         <select
           className="pointer"
